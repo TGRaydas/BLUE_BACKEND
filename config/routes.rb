@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   post '/createTrip', to: "main#createTrips"
   get '/my_trips', to: "main#my_trips"
   get '/getTrip/:id', to: "main#get_trip"
+  get '/profile', to: "profiles#get_profile"
+  post '/profile/create', to: "profiles#create"
   delete '/deleteTrip', to: "main#delete_trip"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
